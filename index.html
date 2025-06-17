@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Instalador Control Zigbee by ArduBrico</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #2b5876, #4e4376);
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="logo.png" />
+    <title>ArduBrico - Instalador</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #9b9bb4;
+      }
 
-    h1 {
-      margin-bottom: 0.5em;
-      font-size: 2.5em;
-    }
+      img {
+        max-width: 200px;
+        margin-bottom: 30px;
+      }
 
-    p {
-      max-width: 600px;
-      font-size: 1.2em;
-      margin-bottom: 2em;
-    }
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+      }
 
-    esp-web-install-button {
-      --esp-tools-button-color: #ffffff;
-      --esp-tools-button-background-color: #00c853;
-      --esp-tools-button-border-radius: 8px;
-      --esp-tools-button-padding: 14px 24px;
-      font-size: 1.1em;
-    }
+      p {
+        color: #faf6f6;
+        margin-bottom: 30px;
+        max-width: 600px;
+      }
 
-    .container {
-      padding: 2em;
-    }
-
-    .footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.9em;
-      color: #ccc;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Instalador de Dispositivo "Control 3 Zigbee" - ESP8266 by ArduBrico</h1>
-    <p>Conecta tu placa ESP8266 (NodeMCU o Wemos D1 Mini) por USB y pulsa el botón para instalar el firmware automáticamente desde el navegador.</p>
-    
+      esp-web-install-button {
+        color: #002244; /* Azul oscuro */
+        background: none;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+    <script type="module" src="https://unpkg.com/esp-web-tools@10.0.0/dist/web/install-button.js?module"></script>
+  </head>
+  <body>
+    <img src="logo.png" alt="Logo ArduBrico" />
+    <h1>Instalador Control 3 Zigbee</h1>
+    <h1>by ArduBrico</h1>
+    <p>
+      Conecta tu ESP8266 por USB y pulsa el botón para instalar el firmware automáticamente.
+    </p>
     <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
-
-    <p style="margin-top: 2em;">¿Problemas? Intenta mantener presionado el botón <strong>FLASH</strong> o <strong>BOOT</strong> al conectar.</p>
-  </div>
-  <div class="footer">www.ArduBrico.com</div>
-</body>
+    <p>www.ArduBrico.com</p>
+  </body>
 </html>
