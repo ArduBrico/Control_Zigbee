@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Instalador ESP8266 Zigbee by ArduBrico</title>
-    <script type="module" src="https://esm.run/esp-web-tools@8.0.6/dist/web/install-button.js"></script>
-  </head>
-  <body>
-    <h1>Instalador Control 3 Zigbee - ESP8266 by ArduBrico</h1>
-    <p>Haz clic en el botón para instalar el firmware en tu ESP8266 (NodeMCU o Wemos D1 Mini):</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instalador ESP8266</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #2b5876, #4e4376);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
 
+    h1 {
+      margin-bottom: 0.5em;
+      font-size: 2.5em;
+    }
+
+    p {
+      max-width: 600px;
+      font-size: 1.2em;
+      margin-bottom: 2em;
+    }
+
+    esp-web-install-button {
+      --esp-tools-button-color: #ffffff;
+      --esp-tools-button-background-color: #00c853;
+      --esp-tools-button-border-radius: 8px;
+      --esp-tools-button-padding: 14px 24px;
+      font-size: 1.1em;
+    }
+
+    .container {
+      padding: 2em;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Instalador de Dispositivo "Control 3 Zigbee" - ESP8266 by ArduBrico</h1>
+    <p>Conecta tu placa ESP8266 (NodeMCU o Wemos D1 Mini) por USB y pulsa el botón para instalar el firmware automáticamente desde el navegador.</p>
+    
     <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
 
-    <p>Conecta tu dispositivo por USB y sigue las instrucciones.</p>
-    <p>www.ArduBrico.com</p>
-  </body>
+    <p style="margin-top: 2em;">¿Problemas? Intenta mantener presionado el botón <strong>FLASH</strong> o <strong>BOOT</strong> al conectar.</p>
+  </div>
+  <div class="footer">www.ArduBrico.com</div>
+</body>
 </html>
