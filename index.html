@@ -35,37 +35,16 @@
         max-width: 600px;
       }
 
-      #custom-install {
-        background-color: #002244;
-        color: white;
+      esp-web-install-button {
+        color: #002244; /* Azul oscuro */
+        background: none;
+        border: none;
         font-size: 1rem;
         font-weight: bold;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 8px;
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      #custom-install svg {
-        width: 1em;
-        height: 1em;
-        fill: white;
       }
     </style>
-    <script type="module">
-      import { createInstallDialog } from "https://unpkg.com/esp-web-tools@10.0.0/dist/web/install-dialog.js?module";
-
-      document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("custom-install").addEventListener("click", () => {
-          createInstallDialog({
-            manifest: "manifest.json"
-          });
-        });
-      });
-    </script>
+    <script type="module" src="https://unpkg.com/esp-web-tools@10.0.0/dist/web/install-button.js?module"></script>
   </head>
   <body>
     <img src="logo.png" alt="Logo ArduBrico" />
@@ -74,21 +53,13 @@
     <p>
       Conecta tu ESP8266 por USB y pulsa el botón para instalar el firmware automáticamente.
     </p>
-
-    <!-- Botón personalizado con icono -->
-    <button id="custom-install">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-        <path d="M320 32C302.3 32 288 46.33 288 64V320H208V224C208 206.3 193.7 192 176 192H96C78.33 192 64 206.3 64 224V320C28.65 320 0 348.7 0 384C0 419.3 28.65 448 64 448H576C611.3 448 640 419.3 640 384C640 348.7 611.3 320 576 320H352V64C352 46.33 337.7 32 320 32zM96 224H176V320H96V224z"/>
-      </svg>
-      Instalar por USB
-    </button>
-
-    <p>
-      Visita mi canal de Youtube
-      <a href="https://www.youtube.com/@ArduBrico" target="_blank" style="color: #002244; text-decoration: underline;">
-        ArduBrico
-      </a>
-      para más proyectos.
-    </p>
+    <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+<p>
+  Visita mi canal de Youtube
+  <a href="https://www.youtube.com/@ArduBrico" target="_blank" style="color: #002244; text-decoration: underline;">
+    ArduBrico
+  </a>
+  para más proyectos.
+</p>
   </body>
 </html>
