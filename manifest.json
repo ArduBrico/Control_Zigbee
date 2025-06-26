@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "builds": [
     {
-      "chipFamily": "ESP8266",
+      "chipFamily": "ESP",
       "parts": [
         {
           "path": "firmware.bin",
