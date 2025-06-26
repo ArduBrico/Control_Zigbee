@@ -1,5 +1,5 @@
 {
-  "name": "Control 3 Zigbee ESP8266",
+  "name": "Control Zigbee",
   "version": "1.0.0",
   "builds": [
     {
