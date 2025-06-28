@@ -1,8 +1,9 @@
 {
-  "latest_version": "1.0.0",
+  "latest_version": "1.1.0",
   "state": "idle",
-  "title": "Firmware Update.",
-  "release_summary": "Nueva versión 1.0.0 disponible.",
-  "release_url": "https://raw.githubusercontent.com/ArduBrico/Control_Zigbee/main/firmware.bin",
+  "title": "Firmware Update",
+  "release_summary": "Nueva versión 1.1.0 disponible.",
+  "release_url": "https://github.com/ArduBrico/Control_Zigbee/releases/download/v1.1.0/firmware.bin",
   "skipped_version": ""
 }
+
