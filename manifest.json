@@ -4,12 +4,14 @@
   "builds": [
     {
       "chipFamily": "ESP8266",
+      "improv": false,
       "parts": [
         {
-          "path": "firmware.bin",
+          "path": "v1.0.0/firmware.bin",
           "offset": 0
         }
       ]
     }
   ]
 }
+
