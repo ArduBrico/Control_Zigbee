@@ -3,6 +3,7 @@
 Esta versión marca un gran salto en flexibilidad, ya que permite configurar el dispositivo sin modificar el código fuente, directamente desde un portal web alojado en el propio ESP8266.
 
 🚀 Novedades principales
+
 🔧 Portal de configuración WiFiManager:
 
 Selección de red WiFi y contraseña.
