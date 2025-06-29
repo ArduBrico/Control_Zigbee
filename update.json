@@ -4,7 +4,7 @@
     "state": "idle",
     "title": "Update ESP8266",
     "release_summary": "Nueva versión 1.0.0 disponible.",
-    "release_url": "https://github.com/ArduBrico/Control_Zigbee/releases/download/v1.0.0/firmware_esp8266.bin",
+    "release_url": "https://raw.githubusercontent.com/ArduBrico/Control_Zigbee/main/ESP8266/firmware.bin",
     "skipped_version": ""
   },
   "esp32": {
@@ -12,7 +12,7 @@
     "state": "idle",
     "title": "Update ESP32",
     "release_summary": "Nueva versión 1.0.0 disponible.",
-    "release_url": "https://github.com/ArduBrico/Control_Zigbee/releases/download/v1.0.0/firmware_esp32.bin",
+    "release_url": "https://raw.githubusercontent.com/ArduBrico/Control_Zigbee/main/ESP32/firmware.bin",
     "skipped_version": ""
   },
   "esp32c3": {
@@ -20,7 +20,7 @@
     "state": "idle",
     "title": "Update ESP32-C3",
     "release_summary": "Nueva versión 1.0.0 disponible.",
-    "release_url": "https://github.com/ArduBrico/Control_Zigbee/releases/download/v1.0.0/firmware_esp32c3.bin",
+    "release_url": "https://raw.githubusercontent.com/ArduBrico/Control_Zigbee/main/ESP32-C3/firmware.bin",
     "skipped_version": ""
   }
 }
