@@ -1,0 +1,13 @@
+{
+  "name": "ArduBrico Control Zigbee ESP32-C3",
+  "version": "1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        { "path": "ESP-C3/firmware.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
