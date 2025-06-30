@@ -1,0 +1,13 @@
+{
+  "name": "ArduBrico Control Zigbee ESP32",
+  "version": "1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "ESP32/firmware.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
