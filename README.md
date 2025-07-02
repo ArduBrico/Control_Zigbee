@@ -54,11 +54,10 @@ Configuración de los pines:
 | **ESP8266**  | Enchufe1 | GPIO 4            | D2             | GPIO 13      | D7        |
 |              | Enchufe2 | GPIO 5            | D1             | GPIO 12      | D6        |
 |              | Enchufe3 | GPIO 0            | D3             | GPIO 15      | D8        |
-
 | **ESP32**    | Enchufe1 | GPIO 23           | D23            | GPIO 22      | D22       |
 |              | Enchufe2 | GPIO 21           | D21            | GPIO 19      | D19       |
 |              | Enchufe3 | GPIO 18           | D18            | GPIO 5       | D5        |
-
+|              |          |                   |                |              |           | 
 | **ESP32-C3** | Enchufe1 | GPIO 2            | D2             | GPIO 3       | D3        |
 | SuperMini    | Enchufe2 | GPIO 4            | D4             | GPIO 5       | D5        |
 |              | Enchufe3 | GPIO 6            | D6             | GPIO 7       | D7        |
